@@ -1,0 +1,32 @@
+.h_brand_topnav_overlay{
+	position: absolute;
+	z-index: 1;
+}
+
+.h_brand_topnav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 20vw;
+}
+
+.h_brand_topnav_img img {
+	width: 145px;
+	height: 110px;
+	margin-left: 10vw;
+}
+
+.d_content_btn,
+.h_brand_topnav_itens ul {
+	display: flex;
+	gap: 4vw;
+}
+
+.letter_content h1,
+.h_brand_topnav_itens li {
+	font-size: .7em;
+	font-weight: 400;
+	font-family: var(--font-2);
+	color: var(--white-color);
+	list-style: none;
+}

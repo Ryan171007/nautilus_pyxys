@@ -1,0 +1,144 @@
+.h_brand_section {
+	width: 100vw;
+	height: 70vh;
+}
+
+.background_img_initial {
+	position: absolute;
+	z-index: -1;
+	width: 100vw;
+	height: 70vh;
+}
+
+.background_img_initial .img_background {
+	position: absolute;
+	z-index: -1;
+	width: 100vw;
+	height: 70vh;
+}
+
+.letter_content h1,
+.h_brand_topnav_itens li {
+	font-size: .7em;
+	font-weight: 400;
+	font-family: var(--font-2);
+	color: var(--white-color);
+	list-style: none;
+}
+
+.contents_responsive img {
+	width: 630px;
+	height: 70vh;
+}
+
+.contents_responsive {
+	display: flex;
+	gap: 10vw;
+}
+
+.h_brand_content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 8vh;
+}
+
+.letter_content h6,
+h3 {
+	font-size: clamp(.3rem, 10vw, 18px);
+	font-family: var(--font-1);
+	font-weight: 200;
+	color: var(--white-color);
+	line-height: 28px;
+}
+
+.letter_content h3 {
+	margin-top: 1rem;
+	font-size: 1em;
+	width: 54.5%;
+}
+
+.letter_content h1 {
+	width: 50%;
+	font-size: clamp(30px, 10vw, 45px);
+	line-height: 50px;
+	font-weight: 700;
+}
+
+.content_btn {
+	padding: 1rem;
+	margin-top: 1.5rem;
+	font-weight: 700;
+	font-size: 14px;
+	font-family: var(--font-2);
+	color: var(--white-color);
+	border: solid 1px var(--red-color-2);
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.produto_de {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	text-align: center;
+}
+
+.produto_de img {
+	width: 110px;
+	height: 24px;
+}
+
+@media (max-width: 1210px) {
+
+	.background_img_initial,
+	.background_img_initial .img_background,
+	.contents_responsive .img_brand_initial {
+		width: min(100vw);
+		height: 80vh;
+	}
+
+	.contents_responsive {
+		gap: 8vw;
+	}
+
+	.h_brand_content {
+		margin-right: 3rem;
+	}
+
+	.letter_content h1,
+	.letter_content h3,
+	.letter_content h4 {
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 1000px) {
+	.contents_responsive .img_brand_initial {
+		position: absolute;
+		z-index: -1;
+		visibility: hidden;
+	}
+
+	.h_brand_content {
+		width: 100vw;
+		justify-content: center;
+		align-items: center;
+		height: 80vh;
+	}
+
+	.letter_content,
+	.d_content_btn {
+		width: clamp(300px, 50vw, 600px);
+		justify-content: center;
+		align-items: center;
+	}
+
+	.letter_content h1,
+	.letter_content h3,
+	.letter_content h4 {
+		width: 100%;
+		text-align: center;
+	}
+}
